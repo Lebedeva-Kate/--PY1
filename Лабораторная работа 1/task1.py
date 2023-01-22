@@ -1,4 +1,5 @@
 from typing import Union
+import doctest
 
 class Automobile:
     def __init__(self, color_of_the_car: str, width_of_the_car: Union[int, float], length_of_the_car: Union[int, float]):
@@ -178,7 +179,5 @@ class Box:
         return self.width * self.length * self.height
 
 if __name__ == "__main__":
-    import doctest
     doctest.testmod()
-    pass
 # перенос строки
