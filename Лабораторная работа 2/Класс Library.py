@@ -52,7 +52,7 @@ class Library:
         :param books: Книги, содержащиеся в библиотеке
         """
         if not isinstance(books, list):
-            raise TypeError("ID книги должно иметь тип данных int")
+            raise TypeError("Список книг должен иметь тип данных list")
         self.books = books
 
     def get_next_book_id(self) -> int:
