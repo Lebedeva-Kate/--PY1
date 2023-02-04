@@ -60,7 +60,7 @@ class PaperBook(Book):
     # В этом классе помимо атрибутов базового класса появляется атрибут pages.
     # Исходя из этого перегружаем метод __repr__.
     def __repr__(self) -> str:
-        return f"{self.__class__.__name__}(name={self.name!r}, author={self.author!r}, pages={self.pages})"
+        return f"{self.__class__.__name__}(name={self.name!r}, author={self.author!r}, pages={self.pages!r})"
 
 class AudioBook(Book):
     """ Дочерний класс книги."""
@@ -97,5 +97,5 @@ class AudioBook(Book):
     # В этом классе помимо атрибутов базового класса появляется атрибут duration.
     # Исходя из этого перегружаем метод __repr__.
     def __repr__(self) -> str:
-        return f"{self.__class__.__name__}(name={self.name!r}, author={self.author!r}, duration={self.duration})"
+        return f"{self.__class__.__name__}(name={self.name!r}, author={self.author!r}, duration={self.duration!r})"
 # перенос строки
